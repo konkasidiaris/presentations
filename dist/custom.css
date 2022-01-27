@@ -1,0 +1,40 @@
+.kk-container {
+  display: grid;
+  grid-template-columns: 0.25 0.25 0.25 0.25;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "avatar avatar info info"
+    "footer footer footer footer";
+}
+
+.kk-item-header {
+  grid-area: "header";
+  text-transform: none !important;
+}
+
+.kk-item-avatar {
+  grid-area: "avatar";
+  width: 125px;
+  margin-bottom: 25px;
+  border-radius: 100%;
+  transition: all 0.2s;
+  box-shadow: 0;
+  opacity: 1;
+  place-self: center;
+}
+
+.kk-item-info {
+  grid-area: "info";
+  list-style-type: none !important;
+  place-self: center;
+}
+
+.kk-item-footer {
+  grid-area: "footer";
+}
+
+.kk-overwrite-fonts {
+  text-transform: none !important;
+  font-size: x-large !important;
+}
